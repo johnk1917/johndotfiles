@@ -44,14 +44,16 @@ output * bg ~/Pictures/wp6570018-tokyo-aesthetic-wallpapers.jpg fill
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
-### Input configuration
-# Disable monitor
+### Input configuration 
+# Disable monitor (I disabled my monitor because I have two graphics cards. This caused sway to detect two monitors, but I only have one. If this doesn't apply to you, comment out line 49)
 output LVDS-1 disable
 
 #volume & brightness control
 bindsym XF86AudioRaiseVolume exec volume --up 5%
 bindsym XF86AudioLowerVolume exec volume --down 5%
 bindsym XF86AudioMute exec volume --toggle
+bindsym XF86MonBrightnessUp exec brightness --up 5%
+bindsym XF86MonBrightnessDown exec brightness --down 5%
 
 #launch applications
 bindsym $mod+Shift+b exec qutebrowser
