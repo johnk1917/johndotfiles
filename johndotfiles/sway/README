@@ -1,0 +1,1 @@
+In order to have autotiling properly working (bspwm tiling layout), you must install the autotiling package from whatever package manager your distro uses. If you dont want autotiling enabled, comment out line 28 in ~/.config/sway/config .
