@@ -1,0 +1,79 @@
+### Settings from original zathurarc ###
+set pages-per-row 1
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+set font "JetBrains Mono Regular 12"
+
+### zathura-pywal ###
+# Allow recolor
+set recolor 'true'
+
+# Don't allow original hue when recoloring
+set recolor-keephue 'false'
+
+# Don't keep original image colors while recoloring
+set recolor-reverse-video 'false'
+
+# Command line completion entries
+set completion-fg '#d6d7d9'
+set completion-bg '#0f1013'
+
+# Command line completion group elements
+set completion-group-fg '#6B7689'
+set completion-group-bg '#0f1013'
+
+# Current command line completion element
+set completion-highlight-fg '#0f1013'
+set completion-highlight-bg '#d6d7d9'
+
+# Default foreground/background color
+set default-bg rgba(15,16,19,0.80)
+
+# Input bar
+set inputbar-fg '#d6d7d9'
+set inputbar-bg '#0f1013'
+
+# Notification
+set notification-fg '#d6d7d9'
+set notification-bg '#0f1013'
+
+# Error notification
+set notification-error-fg '#d6d7d9'
+set notification-error-bg '#CC8F72'
+
+# Warning notification
+set notification-warning-fg '#d6d7d9'
+set notification-warning-bg '#CC8F72'
+
+# Tab - TODO
+# set tabbar-fg
+# set tabbar-bg
+
+# Focused tab - TODO
+# set tabbar-focus-fg
+# set tabbar-focus-bg
+
+# Status bar
+set statusbar-fg '#d6d7d9'
+set statusbar-bg '#0f1013'
+
+# Highlighting parts of the document (e.g. show search results)
+set highlight-color '#6B7689'
+set highlight-active-color '#6B7689'
+
+# Represent light/dark colors in recoloring mode
+set recolor-lightcolor rgba(0,0,0,0)
+set recolor-darkcolor '#d6d7d9'
+
+# 'Loading...' text
+set render-loading-fg '#d6d7d9'
+set render-loading-bg '#0f1013'
+
+# Index mode
+set index-fg '#d6d7d9'
+set index-bg '#0f1013'
+
+# Selected element in index mode
+set index-active-fg '#0f1013'
+set index-active-bg '#d6d7d9'
