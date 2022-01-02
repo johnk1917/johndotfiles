@@ -3,7 +3,7 @@ set pages-per-row 1
 set scroll-page-aware "true"
 set scroll-full-overlap 0.01
 set scroll-step 100
-set font "JetBrains Mono Regular 12"
+set font "Source Code Pro 11"
 
 ### zathura-pywal ###
 # Allow recolor
@@ -16,34 +16,34 @@ set recolor-keephue 'false'
 set recolor-reverse-video 'false'
 
 # Command line completion entries
-set completion-fg '#a2c0df'
-set completion-bg '#0c1018'
+set completion-fg '#a9b1d6'
+set completion-bg '#16161e'
 
 # Command line completion group elements
 set completion-group-fg '#396492'
-set completion-group-bg '#0c1018'
+set completion-group-bg '#16161e'
 
 # Current command line completion element
-set completion-highlight-fg '#0c1018'
-set completion-highlight-bg '#a2c0df'
+set completion-highlight-fg '#16161e'
+set completion-highlight-bg '#a9b1d6'
 
 # Default foreground/background color
-set default-bg rgba(12,16,24,0.85)
+set default-bg rgba(22,22,30,0.90)
 
 # Input bar
-set inputbar-fg '#a2c0df'
-set inputbar-bg '#0c1018'
+set inputbar-fg '#a9b1d6'
+set inputbar-bg '#16161e'
 
 # Notification
-set notification-fg '#a2c0df'
-set notification-bg '#0c1018'
+set notification-fg '#a9b1d6'
+set notification-bg '#16161e'
 
 # Error notification
-set notification-error-fg '#a2c0df'
+set notification-error-fg '#a9b1d6'
 set notification-error-bg '#355B88'
 
 # Warning notification
-set notification-warning-fg '#a2c0df'
+set notification-warning-fg '#a9b1d6'
 set notification-warning-bg '#355B88'
 
 # Tab - TODO
@@ -55,8 +55,8 @@ set notification-warning-bg '#355B88'
 # set tabbar-focus-bg
 
 # Status bar
-set statusbar-fg '#a2c0df'
-set statusbar-bg '#0c1018'
+set statusbar-fg '#a9b1d6'
+set statusbar-bg '#16161e'
 
 # Highlighting parts of the document (e.g. show search results)
 set highlight-color '#396492'
@@ -64,16 +64,16 @@ set highlight-active-color '#396492'
 
 # Represent light/dark colors in recoloring mode
 set recolor-lightcolor rgba(0,0,0,0)
-set recolor-darkcolor '#a2c0df'
+set recolor-darkcolor '#a9b1d6'
 
 # 'Loading...' text
-set render-loading-fg '#a2c0df'
-set render-loading-bg '#0c1018'
+set render-loading-fg '#a9b1d6'
+set render-loading-bg '#16161e'
 
 # Index mode
-set index-fg '#a2c0df'
-set index-bg '#0c1018'
+set index-fg '#a9b1d6'
+set index-bg '#16161e'
 
 # Selected element in index mode
-set index-active-fg '#0c1018'
-set index-active-bg '#a2c0df'
+set index-active-fg '#16161e'
+set index-active-bg '#a9b1d6'

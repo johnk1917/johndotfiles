@@ -3,7 +3,7 @@ set pages-per-row 1
 set scroll-page-aware "true"
 set scroll-full-overlap 0.01
 set scroll-step 100
-set font "JetBrains Mono Regular 12"
+set font "JetBrains Mono Regular 10"
 
 ### zathura-pywal ###
 # Allow recolor
@@ -16,35 +16,35 @@ set recolor-keephue 'false'
 set recolor-reverse-video 'false'
 
 # Command line completion entries
-set completion-fg '#d6d7d9'
-set completion-bg '#0f1013'
+set completion-fg '#a2c0df'
+set completion-bg '#16161e'
 
 # Command line completion group elements
-set completion-group-fg '#6B7689'
-set completion-group-bg '#0f1013'
+set completion-group-fg '#396492'
+set completion-group-bg '#16161e'
 
 # Current command line completion element
-set completion-highlight-fg '#0f1013'
-set completion-highlight-bg '#d6d7d9'
+set completion-highlight-fg '#16161e'
+set completion-highlight-bg '#16161e'
 
 # Default foreground/background color
-set default-bg rgba(15,16,19,0.80)
+set default-bg rgba(12,16,24,0.95)
 
 # Input bar
-set inputbar-fg '#d6d7d9'
-set inputbar-bg '#0f1013'
+set inputbar-fg '#a2c0df'
+set inputbar-bg '#16161e'
 
 # Notification
-set notification-fg '#d6d7d9'
-set notification-bg '#0f1013'
+set notification-fg '#a2c0df'
+set notification-bg '#16161e'
 
 # Error notification
-set notification-error-fg '#d6d7d9'
-set notification-error-bg '#CC8F72'
+set notification-error-fg '#a2c0df'
+set notification-error-bg '#355B88'
 
 # Warning notification
-set notification-warning-fg '#d6d7d9'
-set notification-warning-bg '#CC8F72'
+set notification-warning-fg '#a2c0df'
+set notification-warning-bg '#355B88'
 
 # Tab - TODO
 # set tabbar-fg
@@ -55,25 +55,25 @@ set notification-warning-bg '#CC8F72'
 # set tabbar-focus-bg
 
 # Status bar
-set statusbar-fg '#d6d7d9'
-set statusbar-bg '#0f1013'
+set statusbar-fg '#a2c0df'
+set statusbar-bg '#16161e'
 
 # Highlighting parts of the document (e.g. show search results)
-set highlight-color '#6B7689'
-set highlight-active-color '#6B7689'
+set highlight-color '#396492'
+set highlight-active-color '#396492'
 
 # Represent light/dark colors in recoloring mode
 set recolor-lightcolor rgba(0,0,0,0)
-set recolor-darkcolor '#d6d7d9'
+set recolor-darkcolor '#a2c0df'
 
 # 'Loading...' text
-set render-loading-fg '#d6d7d9'
-set render-loading-bg '#0f1013'
+set render-loading-fg '#a2c0df'
+set render-loading-bg '#16161e'
 
 # Index mode
-set index-fg '#d6d7d9'
-set index-bg '#0f1013'
+set index-fg '#a2c0df'
+set index-bg '#16161e'
 
 # Selected element in index mode
-set index-active-fg '#0f1013'
-set index-active-bg '#d6d7d9'
+set index-active-fg '#16161e'
+set index-active-bg '#16161e'

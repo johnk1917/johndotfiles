@@ -6,9 +6,9 @@
 
 window#waybar {
   /* background-color: rgba(18, 21, 29, 0.98); */
-  background-color: #16161e;
+  background-color: #12151d;
   /* background-color: rgba(0, 0, 0, 0); */
-  border-bottom: 1px solid #1a1b26;
+  border-bottom: 3px solid #1e222a;
   color: #abb2bf;
   transition-property: background-color;
   transition-duration: .5s;
@@ -33,7 +33,7 @@ window#waybar.hidden {
 #battery,
 #network,
 #tray {
-  background-color: #1f1f2d;
+  background-color: #1e222a;
   padding: 0 10px;
   margin: 2px 4px 5px 4px;
   border: 3px solid rgba(0, 0, 0, 0);
@@ -44,7 +44,7 @@ window#waybar.hidden {
 #workspaces button {
   padding: 0 5px;
   min-width: 20px;
-  color: #a9b1d6;
+  color: #61afef;
 }
 
 #workspaces button:hover {
@@ -52,7 +52,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-  color: #7aa2f7;
+  color: #c678dd;
 }
 
 #workspaces button.urgent {
@@ -60,7 +60,7 @@ window#waybar.hidden {
 }
 
 #cpu {
-  color: #7aa2f7;
+  color: #61afef;
 }
 
 #memory {
@@ -73,12 +73,12 @@ window#waybar.hidden {
 
 #temperature.critical {
   background-color: #e06c75;
-  color: #1a1b26;
+  color: #1e222a;
 }
 
 #custom-media {
   background-color: #c678dd;
-  color: #1a1b26;
+  color: #1e222a;
 }
 
 #custom-fans {
@@ -86,7 +86,7 @@ window#waybar.hidden {
 }
 
 #clock {
-  color: #7aa2f7;
+  color: #61afef;
 }
 
 #idle_inhibitor {
@@ -95,45 +95,45 @@ window#waybar.hidden {
 
 #idle_inhibitor.activated {
   background-color: #abb2bf;
-  color: #1a1b26;
+  color: #1e222a;
 }
 
 #language {
-  color: #7aa2f7;
+  color: #61afef;
 }
 
 #pulseaudio {
-  color: #7aa2f7;
+  color: #61afef;
 }
 
 #pulseaudio.muted {
   background-color: #e06c75;
-  color: #1a1b26;
+  color: #1e222a;
 }
 
 #backlight {
-  color: #7aa2f7;
+  color: #61afef;
 }
 
 #battery {
-  color: #7aa2f7;
+  color: #61afef;
 }
 
 #battery.charging, #battery.plugged {
   background-color: #98c379;
-  color: #1a1b26;
+  color: #1e222a;
 }
 
 @keyframes blink {
     to {
-        background-color: #1a1b26;
+        background-color: #1e222a;
         color: #e06c75;
     }
 }
 
 #battery.critical:not(.charging) {
     background-color: #e06c75;
-    color: #1a1b26;
+    color: #1e222a;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -142,10 +142,10 @@ window#waybar.hidden {
 }
 
 #network {
-    color: #7aa2f7
+    color: #61afef
 }
 
 #network.disconnected {
     background-color: #e06c75;
-    color: #1a1b26;
+    color: #1e222a;
 }
