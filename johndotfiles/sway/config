@@ -14,16 +14,16 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu exec rofi -show 
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wp6570018-tokyo-aesthetic-wallpapers.jpg fill
+output * bg ~/Pictures/tokyo.png fill
 #
 # Example configuration:
 #
@@ -48,40 +48,56 @@ output * bg ~/Pictures/wp6570018-tokyo-aesthetic-wallpapers.jpg fill
 # Disable monitor (I disabled my monitor because I have two graphics cards. This caused sway to detect two monitors, but I only have one. If this doesn't apply to you, comment out line 49)
 output LVDS-1 disable
 
+#start dunst
+exec dunst
+
 #volume & brightness control
-bindsym XF86AudioRaiseVolume exec volume --up 5%
-bindsym XF86AudioLowerVolume exec volume --down 5%
-bindsym XF86AudioMute exec volume --toggle
-bindsym XF86MonBrightnessUp exec brightness --up 5%
-bindsym XF86MonBrightnessDown exec brightness --down 5%
+bindsym XF86AudioRaiseVolume exec volume up 
+bindsym XF86AudioLowerVolume exec volume down 
+bindsym XF86AudioMute exec volume toggle 
+bindsym XF86MonBrightnessUp exec brightness up 
+bindsym XF86MonBrightnessDown exec brightness down 
 
 #launch applications
 bindsym $mod+Shift+b exec qutebrowser
-bindsym $mod+Shift+a exec alacritty -e ani-cli
+bindsym $mod+Shift+g exec firefox
+bindsym $mod+Shift+a exec foot -e ani-cli
 bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+z exec zathura
+bindsym $mod+Shift+r exec foot -e ranger
+bindsym ctrl+Alt+t exec xfce4-appearance-settings
+bindsym $mod+Shift+f exec nemo
+bindsym ctrl+Alt+h exec foot -e htop
+bindsym $mod+Shift+m exec foot -e cmus
+
+#take screenshots
+bindsym $mod+Shift+s exec grim -g "$(slurp)" -| wl-copy && dunstify "Screenshot Clipped" 
+bindsym $mod+Shift+p exec IMG=/tmp/$(date | sed "s/\s/-/g" | sed "s/--/-/g").png && grim $IMG && cat $IMG | wl-copy && rm -rf $IMG && dunstify "Screenshot Clipped" 
 
 #Enable autotiling
-bindsym Alt+a exec autotiling
+exec autotiling
 
 #border color
 set $grey   #000000
-set $blue   #008aff
+set $blue   #7aa2f7
 set $white  #ffffff
 
 #
 client.focused    $grey    $grey    $white    $blue    $blue
 
 # swaylock
-bindsym $mod+x exec systemctl suspend
+bindsym $mod+x exec loginctl suspend && exec swaylock
+# clipboard manager
+exec wl-paste -t text --watch clipman store --no-persist
+
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+   input "1452:594:bcm5974" {
+       dwt enabled
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -89,6 +105,7 @@ bindsym $mod+x exec systemctl suspend
 ### Key bindings
 #
 # Basics:
+#
 #
     # Start a terminal
     bindsym $mod+Return exec $term
@@ -164,8 +181,8 @@ bindsym $mod+x exec systemctl suspend
     # We just use 1-10 as the default.
 # gaps
 default_border pixel 2
-gaps inner 10
-gaps outer 10
+default_floating_border pixel 2
+gaps inner 5
 
 # Layout stuff:
 #

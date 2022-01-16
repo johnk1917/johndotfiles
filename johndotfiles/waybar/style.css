@@ -1,4 +1,5 @@
 * {
+
   border: none;
   font-family: Iosevka Nerd Font, sans-serif;
   font-size: 13px;
@@ -64,11 +65,11 @@ window#waybar.hidden {
 }
 
 #memory {
-  color: #c678dd;
+  color: #7aa2f7;
 }
 
 #temperature {
-  color: #d19a66;
+  color: #7aa2f7;
 }
 
 #temperature.critical {
@@ -82,7 +83,7 @@ window#waybar.hidden {
 }
 
 #custom-fans {
-  color: #98c379;
+  color: #7aa2f7;
 }
 
 #clock {

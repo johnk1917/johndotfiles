@@ -1,8 +1,8 @@
 {
     "height": 37, // Waybar height (to be removed for auto height)
     "modules-left": ["sway/workspaces", "custom/media"],
-    "modules-center": ["clock"],
-    "modules-right": ["idle_inhibitor", "sway/language", "pulseaudio", "backlight", "battery", "network", "tray"],
+    "modules-center": [],
+    "modules-right": ["cpu", "memory", "custom/fans", "temperature", "backlight", "pulseaudio", "battery", "clock", "network", "tray"],
 
     // Modules configuration
      "sway/workspaces": {
@@ -17,9 +17,9 @@
              "5": " ",
              "6": " ",
              "7": " ",
-             "8": " ",
-             "9": " ",
-             "10": " ",
+             "8": " ",
+             "9": " ",
+             "10": " ",
              "urgent": " ",
              "focused": " ",
              "default": " "
