@@ -1,12 +1,18 @@
-local chad_modules = {
-   "options",
-   "mappings",
+-- try to call custom init
+pcall(require, "custom")
+
+local core_modules = {
+   "core.options",
+   "core.autocmds",
+   "core.mappings",
 }
 
-for i = 1, #chad_modules, 1 do
-   if not pcall(require, chad_modules[i]) then
-      error("Error loading " .. chad_modules[i] .. "\n")
+for _, module in ipairs(core_modules) do
+   local ok, err = pcall(require, module)
+   if not ok then
+      error("Error loading " .. module .. "\n\n" .. err)
    end
 end
 
-require("mappings").misc()
+-- non plugin mappings
+require("core.mappings").misc()
