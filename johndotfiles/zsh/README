@@ -1,5 +1,4 @@
-In order to get my config for the zsh shell working, you must have powerlevel10k installed to your system. The link can be found here:
-https://github.com/romkatv/powerlevel10k#manual
-
-For autocompletion and syntax coloring, you can run the as.sh script which is also within this directory and then close out of zsh and reopen it.
-Also, please note that a couple things in my zsh config are specific for Macbook Pros since that is what I have. It shouldn't cause any issues for you, but if you want you can remove the MBP specific stuff.
+In order to get my zsh config working, you need oh-my-zsh, zsh-autosuggestions, and zsh-syntax-highlighting. 
+https://ohmyz.sh/
+https://github.com/zsh-users/zsh-syntax-highlighting
+https://github.com/zsh-users/zsh-autosuggestions 
