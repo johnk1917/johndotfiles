@@ -1,0 +1,1 @@
+In order to get my ranger configuration working, you must have imagemagick, libsixel, dragon-drag-and-drop,and ranger-sixel, the latter of which is a complete drop in replacement for ranger that is used for image display under wayland.You must also use ranger in the foot terminal if you wish for image display to work as sixel does not work with alacritty.
