@@ -2,7 +2,23 @@
 These are my current dotfiles for the sway window manager. Be sure that if a directory has a README file to read it so that you don't miss any of my configs.
 In order for the screenshot keybinds to properly work, you must also install both the grim and slurp package.
 
-For those who are using Macbook Pros, you can download the macfanctld package for fan detection. Its default configuration is the same as apple's, so your fans should work fine after you run the daemon. I have not included the line for them to run at startup due to the fact that many people are starting to use other init systems which are not systemd. In order to have macfanctld run on startup, you'll need to configure it for your specific init system. Alternatively, you can simply open a terminal on a workspace you dont usually use and run "mcf" in that terminal to enable the daemon.
+List of programs I use in this rice:
+sway (the window manager)
+wlroots (a dependency of sway)
+xorg-xwayland (allows xorg programs to run in sway and other wayland compositors)
+ranger-sixel (a foot of the ranger file managers which gives it the ability to give image display)
+imagemagick (the program needed to load the image in ranger)
+libsixel (sixel, the tool which allows you to view images in the terminal)
+waybar (the top bar)
+cmus (the music player)
+zathura-pywal (a fork of zathura which allows it to generate a pywal theme. You can use the -a flag and a range from 0 to 1 to give it transparency.)
+pywal (automatic colorscheme generator needed by zathura-pywal)
+neovim (my text editor)
+foot (the preferred terminal under wayland)
+qutebrowser (vim inspired browser based on chromium)
+swaylock-effects (a fork of swaylock that gives it the ability to do special effects on wayland)
+dunst (notification daemon)
+rofi-lbonn-wayland-git (a fork of rofi, a start menu, for wayland)
 
 ![image](https://user-images.githubusercontent.com/96326315/150324952-936dbc65-521b-46cf-990a-15c6b78a7f89.png)
 ![image](https://user-images.githubusercontent.com/96326315/150324299-961cf13d-71ee-40f1-8511-2e4623f7e5f4.png)
