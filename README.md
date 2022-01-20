@@ -21,6 +21,7 @@ dunst (notification daemon)
 rofi-lbonn-wayland-git (a fork of rofi, a start menu, for wayland)
 
 ![image](https://user-images.githubusercontent.com/96326315/150324952-936dbc65-521b-46cf-990a-15c6b78a7f89.png)
+![image](https://user-images.githubusercontent.com/96326315/150327161-b4d42266-577c-4bb6-a63a-48bb15378f1b.png)
 ![image](https://user-images.githubusercontent.com/96326315/150324299-961cf13d-71ee-40f1-8511-2e4623f7e5f4.png)
 ![image](https://user-images.githubusercontent.com/96326315/150324620-c9151589-6f05-4784-b535-09530031cf4b.png)
 ![image](https://user-images.githubusercontent.com/96326315/150324922-e7f9a5b6-17fe-41ab-affa-9c85ac2a6439.png)
